@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register2Activity"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/title_register2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:text="@string/register"
+        android:textSize="@dimen/title_size" />
+
+    <ScrollView
+        android:id="@+id/scrollContainer_register2"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center">
+
+        <LinearLayout
+            android:id="@+id/linearLayout_register2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/registerButton_register2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="100sp"
+        android:layout_marginRight="100sp"
+        android:textAlignment="center"
+        android:onClick="registerActivity"
+        android:text="@string/register"
+        android:textSize="@dimen/fields" />
+
+</LinearLayout>

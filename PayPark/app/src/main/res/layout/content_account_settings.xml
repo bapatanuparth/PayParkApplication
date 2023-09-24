@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AccountSettingsActivity"
+    tools:showIn="@layout/app_bar_account_settings"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="@string/account_settings"
+        android:textSize="@dimen/title_size"
+        android:textAlignment="center" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1,2">
+
+        <TableRow android:padding="5sp">
+            <TextView
+                android:layout_width="162dp"
+                android:layout_height="wrap_content"
+                android:text="@string/family_id"
+                android:textAlignment="center"
+                android:textSize="@dimen/fields" />
+            <TextView
+                android:id="@+id/fid_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/fields"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow android:padding="5sp">
+            <TextView
+                android:layout_width="162dp"
+                android:layout_height="wrap_content"
+                android:text="@string/mobile_number"
+                android:textAlignment="center"
+                android:textSize="@dimen/fields" />
+            <TextView
+                android:id="@+id/mobile_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/fields"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow android:padding="5sp">
+            <TextView
+                android:layout_width="162dp"
+                android:layout_height="wrap_content"
+                android:text="@string/balance"
+                android:textAlignment="center"
+                android:textSize="@dimen/fields" />
+            <TextView
+                android:id="@+id/balance_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="@dimen/fields"
+                android:textAlignment="center" />
+        </TableRow>
+
+        <TableRow android:padding="5sp">
+            <TextView
+                android:layout_width="162dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textAlignment="center"
+                android:textSize="@dimen/fields" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_balance"
+                android:textSize="@dimen/fields"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:background="@color/colorPrimary"
+                android:onClick="makePayment"/>
+        </TableRow>
+
+        <TableRow android:paddingTop="20sp">
+            <TextView
+                android:layout_span="2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/registered_vehicles"
+                android:textAlignment="center"
+                android:textSize="@dimen/fields" />
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:id="@+id/vehicle_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:layout_marginTop="20sp">
+    </ListView>
+
+</LinearLayout>

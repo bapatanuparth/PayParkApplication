@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register1Activity"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/title_register1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textAlignment="center"
+        android:text="@string/register"
+        android:textSize="@dimen/title_size" />
+
+    <EditText
+        android:id="@+id/idField_register1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="60sp"
+        android:layout_marginRight="60sp"
+        android:textAlignment="center"
+        android:hint="@string/id_field"
+        android:inputType="text"
+        android:textSize="@dimen/fields" />
+
+    <EditText
+        android:id="@+id/passwordField_register1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60sp"
+        android:layout_marginRight="60sp"
+        android:hint="@string/password_field"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textSize="@dimen/fields" />
+
+    <EditText
+        android:id="@+id/mobileField_register1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60sp"
+        android:layout_marginRight="60sp"
+        android:hint="@string/mobile_field"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="@dimen/fields" />
+
+    <EditText
+        android:id="@+id/no_vehicle_register1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="60sp"
+        android:layout_marginRight="60sp"
+        android:hint="@string/no_vehicle_field"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="@dimen/fields" />
+
+    <Button
+        android:id="@+id/loginButton_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="100sp"
+        android:layout_marginRight="100sp"
+        android:onClick="nextActivity"
+        android:text="@string/next_button"
+        android:textSize="@dimen/fields" />
+
+</LinearLayout>

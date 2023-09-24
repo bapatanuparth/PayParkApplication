@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Pay Park</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="parking_log">Parking Log</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="preferences">Preferences</string>
+    <string name="logout">Logout</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_account_settings">AccountSettingsActivity</string>
+    <string name="title_activity_preferences">PreferencesActivity</string>
+    <string name="login">Login</string>
+    <string name="id_field">Enter family id</string>
+    <string name="password_field">Enter Password</string>
+    <string name="login_button">Login</string>
+    <string name="register">Register</string>
+    <string name="mobile_field">Enter Mobile number</string>
+    <string name="no_vehicle_field">Number of vehicles</string>
+    <string name="next_button">Next</string>
+    <string name="family_id">Family ID</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="entry_time">Entry Time</string>
+    <string name="exit_time">Exit Time</string>
+    <string name="balance">Balance</string>
+    <string name="add_balance">Add Balance</string>
+    <string name="registered_vehicles">Registered Vehicles</string>
+    <string name="notify_me_when_balance_is_low_10"><![CDATA[Notification on low balance(<10)]]></string>
+    <string name="enter_amount">Enter Amount</string>
+    <string name="pay_using">Pay using</string>
+</resources>

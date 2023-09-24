@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="@string/add_balance"
+        android:textSize="@dimen/title_size"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="50sp"
+        android:hint="@string/enter_amount"
+        android:textAlignment="center"
+        android:textSize="@dimen/fields"
+        android:inputType="number"
+        tools:ignore="Autofill" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="70sp"
+        android:text="@string/pay_using"
+        android:textSize="@dimen/fields"/>
+
+    <ImageButton
+        android:id="@+id/google_pay_btn"
+        android:layout_width="100sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:layout_marginStart="120sp"
+        app:srcCompat="@drawable/googlepay_button_content"
+        android:scaleX="2.5"
+        android:scaleY="2.5"
+        android:onClick="payUsingGooglePay"
+        tools:ignore="ContentDescription"
+        android:background="#FFFFFF"/>
+
+    <ImageButton
+        android:id="@+id/paytm_btn"
+        android:layout_width="140sp"
+        android:layout_height="40sp"
+        android:layout_marginStart="100sp"
+        android:layout_marginTop="40sp"
+        android:onClick="payUsingPaytm"
+        android:outlineProvider="none"
+        android:scaleType="centerCrop"
+        android:scaleX="1"
+        android:scaleY="1"
+        app:srcCompat="@mipmap/paytm"
+        android:background="#FFFFFF"/>
+</LinearLayout>

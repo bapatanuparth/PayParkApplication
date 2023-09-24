@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/title_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50sp"
+        android:textAlignment="center"
+        android:text="@string/login"
+        android:textSize="@dimen/title_size" />
+
+    <EditText
+        android:id="@+id/idField_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="60sp"
+        android:layout_marginRight="60sp"
+        android:hint="@string/id_field"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textSize="@dimen/fields" />
+
+    <EditText
+        android:id="@+id/passwordField_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="60sp"
+        android:layout_marginRight="60sp"
+        android:inputType="textPassword"
+        android:hint="@string/password_field"
+        android:textAlignment="center"
+        android:textSize="@dimen/fields" />
+
+    <Button
+        android:id="@+id/loginButton_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35sp"
+        android:layout_marginLeft="100sp"
+        android:layout_marginRight="100sp"
+        android:text="@string/login_button"
+        android:textSize="@dimen/fields"
+        android:onClick="loginActivity" />
+
+    <Button
+        android:id="@+id/registerButton_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35sp"
+        android:layout_marginLeft="100sp"
+        android:layout_marginRight="100sp"
+        android:text="@string/register"
+        android:textSize="@dimen/fields"
+        android:onClick="registerActivity" />
+
+</LinearLayout>

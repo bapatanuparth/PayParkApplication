@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ParkingLogActivity"
+    tools:showIn="@layout/app_bar_parking_log"
+    android:orientation="vertical"
+    android:id="@+id/layout_parking_log"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:text="@string/parking_log"
+        android:textSize="@dimen/title_size"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="180sp"
+            android:layout_height="wrap_content"
+            android:text="@string/parking_log"
+            android:textSize="@dimen/fields"
+            android:textAlignment="viewEnd" />
+
+        <Spinner
+            android:id="@+id/vehicle_spinner"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/table_parking_log"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="60sp"
+        android:stretchColumns="1,2">
+    </TableLayout>
+
+</LinearLayout>
